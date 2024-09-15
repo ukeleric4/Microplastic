@@ -41,7 +41,7 @@ pygame.display.set_caption("Fish Dodging Microplastics")
 
 # Fish class
 class Fish:
-    def _init_(self):
+    def __init__(self):
         self.image = fish_img
         self.rect = self.image.get_rect()
         self.rect.x = SCREEN_WIDTH // 2
@@ -62,7 +62,7 @@ class Fish:
 
 # Plastic class
 class Plastic:
-    def _init_(self, image):
+    def __init__(self, image):
         self.image = image
         self.rect = self.image.get_rect()
         self.rect.x = random.randint(0, SCREEN_WIDTH - PLASTIC_WIDTH)
